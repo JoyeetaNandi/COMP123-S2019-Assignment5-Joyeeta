@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DollarComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DollarComputer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OrderComputer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrderComputer1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OrderComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrderComputer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OrderComputer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrderComputer.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OrderComputer3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrderComputer1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dollar.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OrderComputer4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OrderComputer2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StartForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StartForm.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Order.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="StartImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StartImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
