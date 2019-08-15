@@ -53,7 +53,7 @@
             this.ModelLabel = new System.Windows.Forms.Label();
             this.OSDataLabel = new System.Windows.Forms.Label();
             this.OSLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
             this.ManufaturerLabel = new System.Windows.Forms.Label();
             this.PlatformDataLabel = new System.Windows.Forms.Label();
             this.PlatformLabel = new System.Windows.Forms.Label();
@@ -76,7 +76,6 @@
             this.CPUBrandLabel = new System.Windows.Forms.Label();
             this.MemoryDataLabel = new System.Windows.Forms.Label();
             this.MemoryLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.ProductionInfoFormMenuStrip.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
             this.TechSpecsGroupBox.SuspendLayout();
@@ -263,7 +262,7 @@
             this.ProductInfoGroupBox.Controls.Add(this.ModelLabel);
             this.ProductInfoGroupBox.Controls.Add(this.OSDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.OSLabel);
-            this.ProductInfoGroupBox.Controls.Add(this.label1);
+            this.ProductInfoGroupBox.Controls.Add(this.ManufacturerDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.ManufaturerLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformDataLabel);
             this.ProductInfoGroupBox.Controls.Add(this.PlatformLabel);
@@ -314,15 +313,15 @@
             this.OSLabel.Text = "OS";
             this.OSLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // ManufacturerDataLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(121, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 34);
-            this.label1.TabIndex = 21;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ManufacturerDataLabel.BackColor = System.Drawing.Color.White;
+            this.ManufacturerDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManufacturerDataLabel.Location = new System.Drawing.Point(121, 60);
+            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
+            this.ManufacturerDataLabel.Size = new System.Drawing.Size(141, 34);
+            this.ManufacturerDataLabel.TabIndex = 21;
+            this.ManufacturerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ManufaturerLabel
             // 
@@ -331,7 +330,7 @@
             this.ManufaturerLabel.Name = "ManufaturerLabel";
             this.ManufaturerLabel.Size = new System.Drawing.Size(109, 34);
             this.ManufaturerLabel.TabIndex = 20;
-            this.ManufaturerLabel.Text = "Manufaturer";
+            this.ManufaturerLabel.Text = "Manufacturer";
             this.ManufaturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PlatformDataLabel
@@ -347,7 +346,7 @@
             // PlatformLabel
             // 
             this.PlatformLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlatformLabel.Location = new System.Drawing.Point(30, 16);
+            this.PlatformLabel.Location = new System.Drawing.Point(6, 16);
             this.PlatformLabel.Name = "PlatformLabel";
             this.PlatformLabel.Size = new System.Drawing.Size(85, 34);
             this.PlatformLabel.TabIndex = 18;
@@ -356,7 +355,6 @@
             // 
             // TechSpecsGroupBox
             // 
-            this.TechSpecsGroupBox.Controls.Add(this.label2);
             this.TechSpecsGroupBox.Controls.Add(this.WebCamDataLabel);
             this.TechSpecsGroupBox.Controls.Add(this.WebCamLabel);
             this.TechSpecsGroupBox.Controls.Add(this.GPUTypeDataLabel);
@@ -562,16 +560,6 @@
             this.MemoryLabel.Text = "Memory";
             this.MemoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(318, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 34);
-            this.label2.TabIndex = 40;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -592,6 +580,7 @@
             this.MainMenuStrip = this.ProductionInfoFormMenuStrip;
             this.Name = "ProductInfoForm";
             this.Text = "Product Information Form";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.ProductionInfoFormMenuStrip.ResumeLayout(false);
             this.ProductionInfoFormMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
@@ -627,7 +616,7 @@
         private System.Windows.Forms.Label ModelLabel;
         private System.Windows.Forms.Label OSDataLabel;
         private System.Windows.Forms.Label OSLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ManufacturerDataLabel;
         private System.Windows.Forms.Label ManufaturerLabel;
         private System.Windows.Forms.Label PlatformDataLabel;
         private System.Windows.Forms.Label PlatformLabel;
@@ -650,6 +639,5 @@
         private System.Windows.Forms.Label CPUNumberLabel;
         private System.Windows.Forms.Label LCDSizeDataLAbel;
         private System.Windows.Forms.Label LCDSizeLabel;
-        private System.Windows.Forms.Label label2;
     }
 }

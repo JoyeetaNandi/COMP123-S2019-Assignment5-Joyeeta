@@ -4,7 +4,10 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Models
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-
+    /*
+ * Student Name: Joyeeta Nandi
+ * Student Id: 300757798
+  */
     public partial class DollarComputersContext : DbContext
     {
         public DollarComputersContext()

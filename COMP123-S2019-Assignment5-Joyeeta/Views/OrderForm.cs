@@ -8,6 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ * Student Name: Joyeeta Nandi
+ * Student Id: 300757798
+ * Description: This is the OrderForm Class
+ */
 
 namespace COMP123_S2019_Assignment5_Joyeeta.Views
 {
@@ -31,7 +36,7 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Program.aboutForm.Show();
+            Program.aboutForm.ShowDialog();
             Hide();
         }
 
@@ -43,8 +48,32 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
 
         private void FinishButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thank You for shopping with us. " +
-                "Your order will be processed in 7-10 business days.", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            DialogResult result;
+            result = MessageBox.Show(this, "Thank you for your business, " +
+                "\r\nYour order will be processed within seven business days", "Info", buttons);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }            
+        }
+
+        private void OrderForm_Activated(object sender, EventArgs e)
+        {           
+            ConditionDataLabel.Text = Program.product.condition;
+            PriceDataLabel.Text = "$" + Program.product.cost.ToString();
+            PlatformDataLabel.Text = Program.product.platform;
+            OSDataLabel.Text = Program.product.OS;
+            ModelDataLabel.Text = Program.product.model;
+            MemoryDataLabel.Text = Program.product.RAM_size;
+            LCDSizeDataLAbel.Text = Program.product.screensize;         
+            HDDDataLabel.Text = Program.product.HDD_size;
+            CPUBrandDataLabel.Text = Program.product.CPU_brand;
+            CPUNumberDataLabel.Text = Program.product.CPU_number;
+            GPUTypeDataLabel.Text = Program.product.GPU_Type;
+            CPUTypeDataLabel.Text = Program.product.CPU_type;
+            CPUSpeedDataLabel.Text = Program.product.CPU_speed;
+            WebCamDataLabel.Text = Program.product.webcam;
         }
     }
 }

@@ -9,11 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+ * Student Name: Joyeeta Nandi
+ * Student Id: 300757798
+ * Description: This is the SelectForm Class
+ */
 
 namespace COMP123_S2019_Assignment5_Joyeeta.Views
 {
     public partial class SelectForm : Form
     {
+        int rowIndex;
+        DataGridViewRow currentRow;
         public SelectForm()
         {
             InitializeComponent();
@@ -23,6 +30,8 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
+
+            NextToProductInfoFormButton.Enabled = false;
 
         }
 
@@ -38,24 +47,26 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
 
         private void NextToProductInfoFormButton_Click(object sender, EventArgs e)
         {
+            Program.product.LoadRow(currentRow);
             Program.productInfoForm.Show();
             Hide();
         }
 
         private void ProductDataGridView_SelectionChanged(object sender, EventArgs e)
         {
-            var rowIndex = ProductDataGridView.CurrentCell.RowIndex;
+            rowIndex = ProductDataGridView.CurrentCell.RowIndex;
             
-            var currentRow = ProductDataGridView.Rows[rowIndex];
+            currentRow = ProductDataGridView.Rows[rowIndex];
 
-            var cost = ProductDataGridView.CurrentRow.Cells[1].Value.ToString();
-            var manufacturer = ProductDataGridView.CurrentRow.Cells[2].Value.ToString();
-            var model = ProductDataGridView.CurrentRow.Cells[3].Value.ToString();
-
+            var cost = currentRow.Cells[1].Value.ToString();
+            var manufacturer = currentRow.Cells[2].Value.ToString();
+            var model = currentRow.Cells[3].Value.ToString();
+            
+           
             string outpurString = manufacturer + " " + model + $" {cost:C2}";
 
-            SelectionLabel.Text = outpurString;            
-
+            SelectionLabel.Text = outpurString;
+            NextToProductInfoFormButton.Enabled = true;
         }
     }
 }

@@ -31,11 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.ProductDataGridView = new System.Windows.Forms.DataGridView();
-            this.CancelButton = new System.Windows.Forms.Button();
-            this.dollarComputersDataSet = new COMP123_S2019_Assignment5_Joyeeta.DollarComputersDataSet();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new COMP123_S2019_Assignment5_Joyeeta.DollarComputersDataSetTableAdapters.productsTableAdapter();
-            this.NextToProductInfoFormButton = new System.Windows.Forms.Button();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,11 +62,16 @@
             this.mousttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dollarComputersDataSet = new COMP123_S2019_Assignment5_Joyeeta.DollarComputersDataSet();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.productsTableAdapter = new COMP123_S2019_Assignment5_Joyeeta.DollarComputersDataSetTableAdapters.productsTableAdapter();
+            this.NextToProductInfoFormButton = new System.Windows.Forms.Button();
             this.SelectionTextBox = new System.Windows.Forms.TextBox();
             this.SelectionLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,42 +134,6 @@
             this.ProductDataGridView.Size = new System.Drawing.Size(760, 397);
             this.ProductDataGridView.TabIndex = 2;
             this.ProductDataGridView.SelectionChanged += new System.EventHandler(this.ProductDataGridView_SelectionChanged);
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(586, 501);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(101, 37);
-            this.CancelButton.TabIndex = 3;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // dollarComputersDataSet
-            // 
-            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
-            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "products";
-            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
-            // 
-            // NextToProductInfoFormButton
-            // 
-            this.NextToProductInfoFormButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextToProductInfoFormButton.Location = new System.Drawing.Point(693, 501);
-            this.NextToProductInfoFormButton.Name = "NextToProductInfoFormButton";
-            this.NextToProductInfoFormButton.Size = new System.Drawing.Size(89, 37);
-            this.NextToProductInfoFormButton.TabIndex = 4;
-            this.NextToProductInfoFormButton.Text = "Next";
-            this.NextToProductInfoFormButton.UseVisualStyleBackColor = true;
-            this.NextToProductInfoFormButton.Click += new System.EventHandler(this.NextToProductInfoFormButton_Click);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -419,6 +383,42 @@
             this.webcamDataGridViewTextBoxColumn.ReadOnly = true;
             this.webcamDataGridViewTextBoxColumn.Width = 97;
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "products";
+            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
+            // 
+            // dollarComputersDataSet
+            // 
+            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
+            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(586, 501);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(101, 37);
+            this.CancelButton.TabIndex = 3;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
+            // 
+            // NextToProductInfoFormButton
+            // 
+            this.NextToProductInfoFormButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextToProductInfoFormButton.Location = new System.Drawing.Point(693, 501);
+            this.NextToProductInfoFormButton.Name = "NextToProductInfoFormButton";
+            this.NextToProductInfoFormButton.Size = new System.Drawing.Size(89, 37);
+            this.NextToProductInfoFormButton.TabIndex = 4;
+            this.NextToProductInfoFormButton.Text = "Next";
+            this.NextToProductInfoFormButton.UseVisualStyleBackColor = true;
+            this.NextToProductInfoFormButton.Click += new System.EventHandler(this.NextToProductInfoFormButton_Click);
+            // 
             // SelectionTextBox
             // 
             this.SelectionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -460,8 +460,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectForm_FormClosing);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
