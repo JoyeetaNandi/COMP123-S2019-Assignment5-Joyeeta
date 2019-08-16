@@ -60,9 +60,9 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
 
         private void OrderForm_Activated(object sender, EventArgs e)
         {           
-            ConditionDataLabel.Text = Program.product.condition;
-            PriceDataLabel.Text = "$" + Program.product.cost.ToString();
+            ConditionDataLabel.Text = Program.product.condition;            
             PlatformDataLabel.Text = Program.product.platform;
+            ManufactureDataLabel.Text = Program.product.manufacturer;
             OSDataLabel.Text = Program.product.OS;
             ModelDataLabel.Text = Program.product.model;
             MemoryDataLabel.Text = Program.product.RAM_size;
@@ -74,6 +74,10 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Views
             CPUTypeDataLabel.Text = Program.product.CPU_type;
             CPUSpeedDataLabel.Text = Program.product.CPU_speed;
             WebCamDataLabel.Text = Program.product.webcam;
+
+            PriceDataLabel.Text = "$" + Program.product.cost.ToString();
+            SalesTaxDataLabel.Text = "$" + (Program.product.cost * 13 / 100).ToString();
+            TotalDataLabel.Text = "$" + (Program.product.cost * 113 / 100).ToString();
         }
     }
 }

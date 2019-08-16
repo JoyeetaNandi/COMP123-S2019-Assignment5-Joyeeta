@@ -49,7 +49,7 @@
             this.SystemComponentsGroupBox = new System.Windows.Forms.GroupBox();
             this.ModelDataLabel = new System.Windows.Forms.Label();
             this.ModelLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ManufactureDataLabel = new System.Windows.Forms.Label();
             this.ManufaturerLabel = new System.Windows.Forms.Label();
             this.PlatformDataLabel = new System.Windows.Forms.Label();
             this.PlatformLabel = new System.Windows.Forms.Label();
@@ -231,7 +231,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SystemComponentsGroupBox.Controls.Add(this.ModelDataLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.ModelLabel);
-            this.SystemComponentsGroupBox.Controls.Add(this.label1);
+            this.SystemComponentsGroupBox.Controls.Add(this.ManufactureDataLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.ManufaturerLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.PlatformDataLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.PlatformLabel);
@@ -265,15 +265,15 @@
             this.ModelLabel.Text = "Model";
             this.ModelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label1
+            // ManufactureDataLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(103, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 34);
-            this.label1.TabIndex = 23;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ManufactureDataLabel.BackColor = System.Drawing.Color.White;
+            this.ManufactureDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManufactureDataLabel.Location = new System.Drawing.Point(103, 101);
+            this.ManufactureDataLabel.Name = "ManufactureDataLabel";
+            this.ManufactureDataLabel.Size = new System.Drawing.Size(114, 34);
+            this.ManufactureDataLabel.TabIndex = 23;
+            this.ManufactureDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ManufaturerLabel
             // 
@@ -282,7 +282,7 @@
             this.ManufaturerLabel.Name = "ManufaturerLabel";
             this.ManufaturerLabel.Size = new System.Drawing.Size(91, 34);
             this.ManufaturerLabel.TabIndex = 22;
-            this.ManufaturerLabel.Text = "Manufaturer";
+            this.ManufaturerLabel.Text = "Manufacturer";
             this.ManufaturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PlatformDataLabel
@@ -801,7 +801,7 @@
         private System.Windows.Forms.Label ConditionLabel;
         private System.Windows.Forms.Label PlatformDataLabel;
         private System.Windows.Forms.Label PlatformLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ManufactureDataLabel;
         private System.Windows.Forms.Label ManufaturerLabel;
         private System.Windows.Forms.Label ModelDataLabel;
         private System.Windows.Forms.Label ModelLabel;
