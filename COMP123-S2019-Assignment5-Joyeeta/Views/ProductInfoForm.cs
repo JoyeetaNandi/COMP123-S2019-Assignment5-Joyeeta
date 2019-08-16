@@ -12,13 +12,14 @@ using System.Windows.Forms;
  * Student Name: Joyeeta Nandi
  * Student Id: 300757798
  * Description: This is the ProductInfoFrom Class
+ * Created on: July 22, 2019.
+ * Last modified on: August 16, 2019.
  */
 
 namespace COMP123_S2019_Assignment5_Joyeeta.Views
 {
     public partial class ProductInfoForm : Form
-    {
-        //public object ProductOpenFileDialog { get; private set; }
+    {       
 
         public ProductInfoForm()
         {

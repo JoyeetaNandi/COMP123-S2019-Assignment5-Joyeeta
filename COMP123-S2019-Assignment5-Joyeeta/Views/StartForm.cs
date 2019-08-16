@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-/* Image source: https://ca.images.search.yahoo.com/search/images;_ylt=AwrJ5sxPu0RdVJsA4DztFAx.;
+/* Student Name: Joyeeta Nandi
+ * Student Id: 300757798
+ * Description: This is the StartForm Class 
+ * Created on: July 22, 2019.
+ * Last modified on: August 16, 2019.
+ * Image source: https://ca.images.search.yahoo.com/search/images;_ylt=AwrJ5sxPu0RdVJsA4DztFAx.;
  * */
 namespace COMP123_S2019_Assignment5_Joyeeta.Views
 {

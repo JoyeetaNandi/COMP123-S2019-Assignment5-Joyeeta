@@ -106,7 +106,11 @@ namespace COMP123_S2019_Assignment5_Joyeeta.Models
 
         [StringLength(255)]
         public string webcam { get; set; }
-
+        /// <summary>
+        /// This is the the method of LoadRow
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void LoadRow(DataGridViewRow currentRow)
         {
             short.TryParse(currentRow.Cells[0].Value.ToString(), out short tempProductID);
